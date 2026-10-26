@@ -1,0 +1,16 @@
+{
+  "mcpBearerToken": "REPLACE_WITH_RANDOM_HEX (node -e \"console.log(require('crypto').randomBytes(32).toString('hex'))\")",
+  "host": "127.0.0.1",
+  "port": 8443,
+  "jobsDir": "jobs",
+  "workspaces": [
+    { "id": "myapp", "path": "/srv/repos/myapp", "defaultBranch": "main", "description": "main TypeScript repo" }
+  ],
+  "opencode": {
+    "bin": "opencode",
+    "args": [],
+    "timeoutMs": 3600000
+  },
+  "git": { "bin": "git", "name": "VPS Coding MCP", "email": "mcp-bot@vps.local" },
+  "gh": { "bin": "gh" }
+}

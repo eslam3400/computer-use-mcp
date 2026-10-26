@@ -1,0 +1,22 @@
+{
+  "name": "vps-coding-mcp",
+  "version": "1.0.0",
+  "description": "Remote HTTPS MCP that runs OpenCode coding jobs against configured repo checkouts, with gh for GitHub finish modes",
+  "type": "module",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "dev": "tsc && node dist/index.js",
+    "test:unit": "node --experimental-strip-types --no-warnings -e \"console.log('see scripts/ tests')\" || true",
+    "test:unit:mcp": "node scripts/test-mcp.mjs",
+    "test:e2e": "node scripts/e2e.mjs"
+  },
+  "engines": {
+    "node": ">=22"
+  },
+  "devDependencies": {
+    "typescript": "^5.6.0",
+    "@types/node": "^24.0.0"
+  }
+}

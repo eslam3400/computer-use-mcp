@@ -1,0 +1,9 @@
+node_modules/
+dist/
+jobs/
+jobs-e2e/
+jobs*/
+config.json
+config.e2e.json
+*.log
+.DS_Store
